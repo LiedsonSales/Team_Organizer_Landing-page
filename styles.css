@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --verde-01: #228b3f;
+    --verde-02: #19702f;
+    --verde-03: #115520;
+    --verde-04: #083910;
+    --verde-05: #001e00;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+html {
+    font-size: 62.5%;
+}
+ 
+body {
+    font-size: 1.6rem;
+}
+
+.main-bg {
+    /* min-width: 100%; */
+    min-height: 100vh;
+    background: var(--verde-03);
+    background-size: center;
+    background-position: center center;
+
+}
+
+.navbar-container {
+    display: flex;
+    background: silver;
+    padding: 15px 40px;
+    margin: 0 0 40px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container i {
+    font-size: 40px;
+}
+
+.navbar-links a{
+    margin: 10px;
+    color: black
+}
+
+.container-content{
+    background: white;
+    width: 122rem;
+    min-height: 60rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid var(--verde-03);
+    overflow: auto;
+}
+
+.format-text {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-container {
+    display: flex;
+    padding: 10px 20px 5px;
+    width: 117rem;
+    border-bottom: 1px solid black;
+}
+
+.text-container h1 {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.input-area {
+    display: flex;
+    padding: 0 0 0 20px;
+}
+
+.player-list {
+    margin-right: 10px;
+}
+
+#main-textarea {
+    width: 50rem;
+    height: 40rem;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid var(--verde-01);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.selector {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+
+#sel {
+    width: 40rem;
+    height: 40px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 0 0 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+option {
+    font-size: 15px;
+}
+
+@media (max-width: 400px) {
+    .navbar-container {
+        padding: 7.5px 10px;
+        margin: 0 0 20px;
+    }
+
+    .container-content {
+        width: 30rem;
+    }
+
+    .navbar-container i {
+        font-size: 10px;
+    }
+    
+    .navbar-links a{
+        margin: 3px;
+        color: black
+    }
+
+    .input-area {
+        display: block;
+    }
+
+    #main-textarea {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    .selector {
+        margin: 30px 0;
+        padding: 0;
+        border: none;
+    }
+
+    #sel {
+        width: 25rem;
+        height: 40px;
+    }
+} 
